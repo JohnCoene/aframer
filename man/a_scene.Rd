@@ -7,7 +7,11 @@
 a_scene(..., envir = FALSE, anim = FALSE)
 }
 \arguments{
-\item{...}{Any \code{aframer} element.}
+\item{...}{Any \code{aframer} element or parameter.}
+
+\item{envir}{Set to \code{TRUE} to source \href{https://github.com/feiss/aframe-environment-component/}{aframe-environment-component}.}
+
+\item{anim}{Set to \code{TRUE} to source \href{https://github.com/ngokevin/kframe/tree/master/components/animation/}{aframe-animation-component}.}
 }
 \description{
 Set aframe scene.

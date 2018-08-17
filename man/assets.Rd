@@ -2,17 +2,15 @@
 % Please edit documentation in R/general.R
 \name{a_assets}
 \alias{a_assets}
-\alias{a_img}
+\alias{a_mixin}
 \title{Assets}
 \usage{
 a_assets(...)
 
-a_img(id = NULL, src = NULL, ...)
+a_mixin(...)
 }
 \arguments{
-\item{...}{Any other parameter.}
-
-\item{id, src}{Id and Source of asset.}
+\item{...}{Any \code{aframer} element or parameter.}
 }
 \description{
 Add assets.

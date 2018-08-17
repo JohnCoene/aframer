@@ -2,9 +2,9 @@
 #'
 #' Set aframe scene.
 #'
-#' @param ... Any \code{aframer} element.
-#' @parm anim Set to \code{TRUE} to source
-#' \href{https://github.com/ngokevin/kframe/tree/master/components/animation/}{aframe-animation-component}.
+#' @param ... Any \code{aframer} element or parameter.
+#' @param envir Set to \code{TRUE} to source \href{https://github.com/feiss/aframe-environment-component/}{aframe-environment-component}.
+#' @param anim Set to \code{TRUE} to source \href{https://github.com/ngokevin/kframe/tree/master/components/animation/}{aframe-animation-component}.
 #'
 #' @importFrom htmltools tag
 #'
@@ -52,8 +52,7 @@ a_animation <- function(...){
 #'
 #' Add assets.
 #'
-#' @param id,src Id and Source of asset.
-#' @param ... Any other parameter.
+#' @param ... Any \code{aframer} element or parameter.
 #'
 #' @rdname assets
 #' @export
@@ -61,15 +60,13 @@ a_assets <- function(...){
   tag("a-assets",list(...))
 }
 
+
+a_img <- function(...){
+  tag("a-img", list(...))
+}
+
 #' @rdname assets
 #' @export
-a_img <- function(id = NULL, src = NULL, ...){
-  tag(
-    "a-img",
-    list(
-      src = src,
-      id = id,
-      ...
-    )
-  )
+a_mixin <- function(...){
+  tag("a-mixin", list(...))
 }

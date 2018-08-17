@@ -93,6 +93,10 @@ a_video(...)
 a_videosphere(...)
 }
 \arguments{
+\item{primitive}{The primitive, excluding \code{a-}.}
+
+\item{opts}{A \code{list} of options.}
+
 \item{...}{Any aframe element or named options.}
 }
 \description{

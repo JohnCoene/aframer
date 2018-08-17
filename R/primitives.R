@@ -2,6 +2,8 @@
 #'
 #' All aframe primitives.
 #'
+#' @param primitive The primitive, excluding \code{a-}.
+#' @param opts A \code{list} of options.
 #' @param ... Any aframe element or named options.
 #'
 #' @examples
