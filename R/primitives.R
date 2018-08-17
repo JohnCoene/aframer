@@ -15,6 +15,7 @@
 #' @rdname primitives
 #' @export
 a_primitive <- function(primitive, opts = list()){
+
   if(missing(primitive))
     stop("missing primitive")
 
