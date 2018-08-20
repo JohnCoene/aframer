@@ -12,3 +12,5 @@ Imports: htmltools, magrittr
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: http://aframer.john-coene.com/
+BugReports: https://github.com/JohnCoene/aframer/issues
