@@ -4,3 +4,6 @@
 test.Rmd
 test.html
 example.png
+index.Rmd
+_pkgdown.yml
+docs

@@ -1,8 +1,14 @@
-.get_dependency <- function(script, path, version){
+.get_dependency <- function(script, version, cdn){
+
+  if(isTRUE(cdn))
+    path <- c(href = paste0("https://aframe.io/releases/", version, "/"))
+  else
+    path <- c(file = system.file(paste0("aframe/", version), package = "aframer"))
+
   htmltools::htmlDependency(
     name = "aframe",
     version = version,
-    src = system.file(path, package = "aframer"),
+    src = path,
     script = script)
 }
 

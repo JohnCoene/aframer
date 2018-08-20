@@ -5,18 +5,16 @@
 \alias{a_dependency}
 \title{Scene}
 \usage{
-a_scene(..., version = "0.8.2", envir = FALSE, anim = FALSE)
+a_scene(..., version = "0.8.2", cdn = FALSE)
 
-a_dependency(version = "0.8.2")
+a_dependency(version = "0.8.2", cdn = FALSE)
 }
 \arguments{
 \item{...}{Any \code{aframer} element or parameter.}
 
 \item{version}{Version of aframe to source, see details.}
 
-\item{envir}{Set to \code{TRUE} to source \href{https://github.com/feiss/aframe-environment-component/}{aframe-environment-component}.}
-
-\item{anim}{Set to \code{TRUE} to source \href{https://github.com/ngokevin/kframe/tree/master/components/animation/}{aframe-animation-component}.}
+\item{cdn}{Set to \code{TRUE} to use the CDN and \code{FALSE} to use local file.}
 }
 \description{
 Set aframe scene.

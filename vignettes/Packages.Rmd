@@ -1,0 +1,43 @@
+---
+title: "Packages"
+author: "John Coene"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Packages}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(htmltools)
+```
+
+Below are a list of `aframer` :package:
+
+```{r}
+div(
+  class = "row",
+  div(
+    class = "col-md-3",
+    div(
+      class = "thumbnail",
+      div(
+        class = "caption",
+        h3("aforce"),
+        p("An aframer package to build Virtual Reality force directed graphs."),
+        p(
+          a(
+            class = "btn btn-primary",
+            tags$i
+          )
+        )
+      )
+    )
+  )
+)
+```
