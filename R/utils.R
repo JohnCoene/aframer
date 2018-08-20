@@ -1,7 +1,11 @@
-.get_dependency <- function(script){
+.get_dependency <- function(script, path, version){
   htmltools::htmlDependency(
     name = "aframe",
-    version = "0.8.0",
-    src = system.file("aframe", package = "aframer"),
+    version = version,
+    src = system.file(path, package = "aframer"),
     script = script)
+}
+
+.avail_versions <- function(){
+  c("0.7.0", "0.8.0", "0.8.2")
 }

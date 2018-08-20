@@ -2,12 +2,17 @@
 % Please edit documentation in R/general.R
 \name{a_scene}
 \alias{a_scene}
+\alias{a_dependency}
 \title{Scene}
 \usage{
-a_scene(..., envir = FALSE, anim = FALSE)
+a_scene(..., version = "0.8.2", envir = FALSE, anim = FALSE)
+
+a_dependency(version = "0.8.2")
 }
 \arguments{
 \item{...}{Any \code{aframer} element or parameter.}
+
+\item{version}{Version of aframe to source, see details.}
 
 \item{envir}{Set to \code{TRUE} to source \href{https://github.com/feiss/aframe-environment-component/}{aframe-environment-component}.}
 
@@ -15,4 +20,12 @@ a_scene(..., envir = FALSE, anim = FALSE)
 }
 \description{
 Set aframe scene.
+}
+\details{
+Available versions:
+\itemize{
+  \item{\code{0.7.0}}
+  \item{\code{0.8.0}}
+  \item{\code{0.8.2}}
+}
 }
