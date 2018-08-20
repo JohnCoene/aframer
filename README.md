@@ -2,6 +2,8 @@
 
 Make Web Virtual Reality in R.
 
+![logo](man/figures/logo.png)
+
 ## Installation
 
 ``` r
