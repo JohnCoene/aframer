@@ -24,6 +24,8 @@ Set aframe scene.
 \details{
 Available versions:
 \itemize{
+  \item{\code{0.5.0}}
+  \item{\code{0.6.0}}
   \item{\code{0.7.0}}
   \item{\code{0.8.0}}
   \item{\code{0.8.2}}
