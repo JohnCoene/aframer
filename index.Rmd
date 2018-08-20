@@ -1,10 +1,23 @@
-## aframer
+
+# aframer
 
 ```{r, eval=TRUE, include=FALSE}
 library(htmltools)
 ```
 
-Make Web Virtual Reality in R.
+```{r, echo=FALSE}
+div(
+  class = "row",
+  div(
+    class = "col-md-3",
+    img(src = "logo.png")
+  ),
+  div(
+    class = "col-md-9",
+    "Make Web Virtual Reality in R."
+  )
+)
+```
 
 #### Installation
 
