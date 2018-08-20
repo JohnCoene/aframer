@@ -13,6 +13,11 @@ authors:
 navbar:
   title: "aframer"
   left:
+    - icon: fa-lg fa-home
+      href: index.html
+    - icon: fa-lg fa-archive
+      text: "Packages"
+      href: "articles/packages.html"
     - icon: fa-lg fa-book
       text: "Reference"
       href: "reference/"
