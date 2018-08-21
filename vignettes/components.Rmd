@@ -1,0 +1,43 @@
+---
+title: "Components"
+author: "John Coene"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Components}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(htmltools)
+```
+
+```{r, echo=FALSE}
+div(
+  class = "row",
+  div(
+    class = "col-md-4",
+    div(
+      class = "thumbnail",
+      div(
+        class = "caption",
+        h3("aenvironment"),
+        p("Easily add environments to aframer packages and visualisations."),
+        p(
+          a(
+            class = "btn btn-default",
+            tags$i(class = "fa fa-desktop"), " Site",
+            href = "http://aenvironment.john-coene.com/"
+          )
+        )
+      )
+    )
+  )
+)
+```

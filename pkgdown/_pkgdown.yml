@@ -18,6 +18,9 @@ navbar:
     - icon: fa-lg fa-archive
       text: "Packages"
       href: "articles/packages.html"
+    - icon: fa-lg fa-cubes
+      text: "Components"
+      href: "articles/components.html"
     - icon: fa-lg fa-book
       text: "Reference"
       href: "reference/"

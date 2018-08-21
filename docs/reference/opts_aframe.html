@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Scene — a_scene • aframer</title>
+<title>Optionise — opts_aframe • aframer</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="Scene — a_scene" />
+<meta property="og:title" content="Optionise — opts_aframe" />
 
-<meta property="og:description" content="Set aframe scene." />
+<meta property="og:description" content="Easily create options." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -135,57 +135,40 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Scene</h1>
+    <h1>Optionise</h1>
     
-    <div class="hidden name"><code>scene.Rd</code></div>
+    <div class="hidden name"><code>opts_aframe.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Set aframe scene.</p>
+    <p>Easily create options.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>a_scene</span>(<span class='no'>...</span>, <span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.2"</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
-
-<span class='fu'>a_dependency</span>(<span class='kw'>version</span> <span class='kw'>=</span> <span class='st'>"0.8.2"</span>, <span class='kw'>cdn</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>opts_aframe</span>(<span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>...</th>
-      <td><p>Any <code>aframer</code> element or parameter.</p></td>
-    </tr>
-    <tr>
-      <th>version</th>
-      <td><p>Version of aframe to source, see details.</p></td>
-    </tr>
-    <tr>
-      <th>cdn</th>
-      <td><p>Set to <code>TRUE</code> to use the CDN and <code>FALSE</code> to use local file.</p></td>
+      <td><p>Any <code>aframer</code> argument.</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Available versions:</p><ul>
-<li><p><code>0.5.0</code></p></li>
-<li><p><code>0.6.0</code></p></li>
-<li><p><code>0.7.0</code></p></li>
-<li><p><code>0.8.0</code></p></li>
-<li><p><code>0.8.2</code></p></li>
-</ul>
-    
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>(<span class='fu'>opts_aframe</span>(<span class='kw'>event</span> <span class='kw'>=</span> <span class='st'>"mouseenter"</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"#8FF7FF"</span>))</div><div class='output co'>#&gt; event: mouseenter;color: #8FF7FF;</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#details">Details</a></li>
-          </ul>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
