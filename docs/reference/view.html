@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • aframer</title>
+<title>Browse &amp; Embed — browse_aframe • aframer</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -32,7 +32,9 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Browse &amp; Embed — browse_aframe" />
+
+<meta property="og:description" content="Browse or embed an aframe." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -61,7 +63,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -124,66 +126,50 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Browse &amp; Embed</h1>
+    
+    <div class="hidden name"><code>view.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>Browse or embed an aframe.</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>browse_aframe</span>(<span class='no'>a</span>)
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="assets.html">a_assets()</a></code> <code><a href="assets.html">a_mixin()</a></code> </p>
-        </td>
-        <td><p>Assets</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="a_animation.html">a_animation()</a></code> </p>
-        </td>
-        <td><p>Animations</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="primitives.html">a_primitive()</a></code> <code><a href="primitives.html">a_entity()</a></code> <code><a href="primitives.html">a_box()</a></code> <code><a href="primitives.html">a_camera()</a></code> <code><a href="primitives.html">a_circle()</a></code> <code><a href="primitives.html">a_collada_model()</a></code> <code><a href="primitives.html">a_cone()</a></code> <code><a href="primitives.html">a_cursor()</a></code> <code><a href="primitives.html">a_curvedimage()</a></code> <code><a href="primitives.html">a_cylinder()</a></code> <code><a href="primitives.html">a_gltf_model()</a></code> <code><a href="primitives.html">a_icosahedron()</a></code> <code><a href="primitives.html">a_image()</a></code> <code><a href="primitives.html">a_light()</a></code> <code><a href="primitives.html">a_link()</a></code> <code><a href="primitives.html">a_obj_model()</a></code> <code><a href="primitives.html">a_octahedron()</a></code> <code><a href="primitives.html">a_plane()</a></code> <code><a href="primitives.html">a_ring()</a></code> <code><a href="primitives.html">a_ring()</a></code> <code><a href="primitives.html">a_sky()</a></code> <code><a href="primitives.html">a_sound()</a></code> <code><a href="primitives.html">a_sphere()</a></code> <code><a href="primitives.html">a_tetrahedron()</a></code> <code><a href="primitives.html">a_text()</a></code> <code><a href="primitives.html">a_torus_knot()</a></code> <code><a href="primitives.html">a_torus()</a></code> <code><a href="primitives.html">a_triangle()</a></code> <code><a href="primitives.html">a_video()</a></code> <code><a href="primitives.html">a_videosphere()</a></code> </p>
-        </td>
-        <td><p>Primitives</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="scene.html">a_scene()</a></code> <code><a href="scene.html">a_dependency()</a></code> </p>
-        </td>
-        <td><p>Scene</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="view.html">browse_aframe()</a></code> <code><a href="view.html">embed_aframe()</a></code> </p>
-        </td>
-        <td><p>Browse &amp; Embed</p></td>
-      </tr>
-    </tbody>
+<span class='fu'>embed_aframe</span>(<span class='no'>a</span>, <span class='kw'>width</span> <span class='kw'>=</span> <span class='st'>"100%"</span>, <span class='kw'>height</span> <span class='kw'>=</span> <span class='st'>"400px"</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>a</th>
+      <td><p>An aframe.</p></td>
+    </tr>
+    <tr>
+      <th>width, height</th>
+      <td><p>Dimensions of <code>DOM</code> containing aframe, must be valid <code>CSS</code>.</p></td>
+    </tr>
     </table>
-  </div>
+    
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
+    <p>Keep the <code>width</code> at <code>100%</code> for a responsive visualisation.</p>
+    
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
-    </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#note">Note</a></li>
+          </ul>
+
   </div>
 </div>
 

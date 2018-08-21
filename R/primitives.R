@@ -12,6 +12,16 @@
 #'
 #' identical(x, y)
 #'
+#' embed_aframe(
+#'   a_scene(
+#'     a_box(
+#'       position = "-1 0.5 -3",
+#'       rotation = "0 45 0",
+#'       color = "#4CC3D9"
+#'     )
+#'   )
+#' )
+#'
 #' @seealso \code{\link{a_scene}}
 #'
 #' @rdname primitives
