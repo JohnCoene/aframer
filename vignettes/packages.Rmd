@@ -36,14 +36,9 @@ div(
         p("An aframer package to build Virtual Reality force directed graphs."),
         p(
           a(
-            class = "btn btn-default",
+            class = "btn btn-default btn-blue",
             tags$i(class = "fa fa-desktop"), " Site",
             href = "http://aforce.john-coene.com/"
-          ),
-          a(
-            class = "btn btn-primary btn-blue",
-            tags$i(class = "fa fa-eye"), " Demo",
-            href = "http://aforce.john-coene.com/example.html"
           )
         )
       )
@@ -63,14 +58,9 @@ div(
         p("An aframer package to build Virtual Reality 3D scatter plots."),
         p(
           a(
-            class = "btn btn-default",
+            class = "btn btn-default btn-blue",
             tags$i(class = "fa fa-desktop"), " Site",
             href = "http://ascatter.john-coene.com/"
-          ),
-          a(
-            class = "btn btn-primary btn-blue",
-            tags$i(class = "fa fa-eye"), " Demo",
-            href = "http://ascatter.john-coene.com/example.html"
           )
         )
       )
@@ -90,14 +80,9 @@ div(
         p("An aframer package to build Virtual Reality 3D graphs plots."),
         p(
           a(
-            class = "btn btn-default",
+            class = "btn btn-default btn-blue",
             tags$i(class = "fa fa-desktop"), " Site",
             href = "http://acharts.john-coene.com/"
-          ),
-          a(
-            class = "btn btn-primary btn-blue",
-            tags$i(class = "fa fa-eye"), " Demo",
-            href = "http://acharts.john-coene.com/example.html"
           )
         )
       )
