@@ -25,7 +25,7 @@ a_scene <- function(..., version = "0.8.2", cdn = FALSE){
   if(!version %in% .avail_versions())
     stop("wrong version number", call. = FALSE)
 
-  sc <- tag("a-scene", list(...))
+  sc <- a_primitive("scene", list(...))
 
   dependencies <- list()
 

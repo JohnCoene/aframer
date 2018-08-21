@@ -3,11 +3,14 @@
 \name{browse_aframe}
 \alias{browse_aframe}
 \alias{embed_aframe}
+\alias{embed_aframe2}
 \title{Browse & Embed}
 \usage{
 browse_aframe(a)
 
 embed_aframe(a, width = "100\%", height = "400px")
+
+embed_aframe2(a, width = "100\%", height = "400px")
 }
 \arguments{
 \item{a}{An aframe.}

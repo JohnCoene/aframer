@@ -16,10 +16,22 @@ browse_aframe <- function(a){
 #' @rdname view
 #' @export
 embed_aframe <- function(a, width = "100%", height = "400px"){
-
+  
   style <- glue::glue("width:{width};height:{height};")
-
+  
   a[[1]] <- htmltools::tagAppendAttributes(a[[1]], style = style, embedded = NA)
+  htmltools::div(
+    a
+  )
+}
+
+#' @rdname view
+#' @export
+embed_aframe2 <- function(a, width = "100%", height = "400px"){
+  
+  style <- glue::glue("width:{width};height:{height};")
+  
+  a <- htmltools::tagAppendAttributes(a, style = style, embedded = NA)
   htmltools::div(
     a
   )
