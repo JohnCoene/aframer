@@ -24,3 +24,19 @@ embed_aframe <- function(a, width = "100%", height = "400px"){
     a
   )
 }
+
+#' Optionise
+#'
+#' Easily create options.
+#'
+#' @param ... Any \code{aframer} argument.
+#'
+#' @examples
+#' (opts_aframe(event = "mouseenter", color = "#8FF7FF"))
+#'
+#' @export
+opts_aframe <- function(...){
+  l <- list(...)
+  opts <- glue::glue("{names(l)}: {l};")
+  glue::glue_collapse(opts)
+}
