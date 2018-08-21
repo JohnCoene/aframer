@@ -7,3 +7,5 @@ example.png
 index.Rmd
 _pkgdown.yml
 docs
+lib
+pkgdown
