@@ -22,7 +22,7 @@
 #'   )
 #' )
 #'
-#' @seealso \code{\link{a_scene}}
+#' @seealso \code{\link{a_scene}} and \code{\link{a_line}}
 #'
 #' @rdname primitives
 #' @export

@@ -120,5 +120,5 @@ embed_aframe(
 
 }
 \seealso{
-\code{\link{a_scene}}
+\code{\link{a_scene}} and \code{\link{a_line}}
 }

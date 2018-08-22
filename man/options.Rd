@@ -2,17 +2,32 @@
 % Please edit documentation in R/helpers.R
 \name{opts_aframe}
 \alias{opts_aframe}
+\alias{vect_aframe}
+\alias{xyz_aframe}
 \title{Optionise}
 \usage{
 opts_aframe(...)
+
+vect_aframe(vect)
+
+xyz_aframe(x, y, z)
 }
 \arguments{
 \item{...}{Any \code{aframer} argument.}
+
+\item{vect}{Vector of coordinates.}
+
+\item{x, y, z}{Coordinates.}
 }
 \description{
 Easily create options.
 }
 \examples{
 (opts_aframe(event = "mouseenter", color = "#8FF7FF"))
+
+coord_vect <- vect_aframe(c(0, 1, 0))
+(coord_xyz <- xyz_aframe(0, 1, 0))
+
+identical(coord_vect, coord_xyz)
 
 }
