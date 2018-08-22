@@ -14,7 +14,20 @@ div(
   ),
   div(
     class = "col-md-9",
-    "Make Web Virtual Reality in R."
+    p(
+      "Make Web Virtual Reality in R."
+    ),
+    p(
+      a(
+        href = "https://arframer.john-coene.com/",
+        target = "_blank",
+        class = "btn btn-lg btn-primary btn-blue",
+        tags$i(
+          class = "fa fa-camera"
+        ),
+        "Augmented Reality"
+      )
+    )
   )
 )
 ```
@@ -65,6 +78,6 @@ tags$a(
   " Demo",
   href = "example.html",
   target = "_blank",
-  class = "btn btn-lg btn-primary btn-blue"
+  class = "btn btn-lg btn-primary"
 )
 ```

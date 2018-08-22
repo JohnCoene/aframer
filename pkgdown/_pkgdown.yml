@@ -24,6 +24,9 @@ navbar:
     - icon: fa-lg fa-book
       text: "Reference"
       href: "reference/"
+    - icon: fa-lg fa-camera
+      text: "AR"
+      href: https://arframer.john-coene.com/
   right:
     - icon: fa-github fa-lg
       href: https://github.com/JohnCoene/aframer
