@@ -67,8 +67,7 @@ vect_aframe <- function(vect){
   if(length(vect) != 3)
     warning(paste("vector of length", length(vect)))
   vect <- glue::glue("{vect}")
-  vect <- glue::glue_collapse(vect, sep = ",")
-  paste0(vect, ";")
+  vect <- glue::glue_collapse(vect, sep = " ")
 }
 
 #' @rdname options
