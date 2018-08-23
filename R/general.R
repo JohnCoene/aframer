@@ -50,17 +50,6 @@ a_dependency <- function(version = "0.8.2", cdn = FALSE){
   )
 }
 
-#' Animations
-#'
-#' Add animations.
-#'
-#' @param ... Any \code{aframer} element.
-#'
-#' @export
-a_animation <- function(...){
-  a_primitive("animation", list(...))
-}
-
 #' Assets
 #'
 #' Add assets.
