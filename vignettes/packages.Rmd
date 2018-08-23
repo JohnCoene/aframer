@@ -102,7 +102,7 @@ div(
       ),
       div(
         class = "caption",
-        h3("acharts"),
+        h3("arframer"),
         p("An aframer package to buil", strong("Augmented"), "Reality visualisations."),
         p(
           a(
