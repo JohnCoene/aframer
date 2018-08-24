@@ -46,7 +46,7 @@ embed_aframe2 <- function(a, width = "100%", height = "400px"){
 #' @param vect Vector of coordinates.
 #'
 #' @examples
-#' (opts_aframe(event = "mouseenter", color = "#8FF7FF"))
+#' (opts_aframe(event = "mouseenter", color = "#8FF7FF", boolean = TRUE))
 #'
 #' coord_vect <- vect_aframe(c(0, 1, 0))
 #' (coord_xyz <- xyz_aframe(0, 1, 0))
@@ -57,6 +57,17 @@ embed_aframe2 <- function(a, width = "100%", height = "400px"){
 #' @export
 opts_aframe <- function(...){
   l <- list(...)
+
+  # JS boolean
+  bool <- function(x){
+    if(is.logical(x))
+      tolower(as.character(x))
+    else
+      x
+  }
+
+  l <- lapply(l, bool)
+
   opts <- glue::glue("{names(l)}: {l};")
   glue::glue_collapse(opts)
 }
