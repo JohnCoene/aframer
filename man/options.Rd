@@ -23,7 +23,7 @@ xyz_aframe(x, y, z)
 Easily create options.
 }
 \examples{
-(opts_aframe(event = "mouseenter", color = "#8FF7FF"))
+(opts_aframe(event = "mouseenter", color = "#8FF7FF", boolean = TRUE))
 
 coord_vect <- vect_aframe(c(0, 1, 0))
 (coord_xyz <- xyz_aframe(0, 1, 0))

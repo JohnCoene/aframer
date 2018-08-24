@@ -5,12 +5,22 @@
 #' @param a An aframe.
 #' @param width,height Dimensions of \code{DOM} containing aframe, must be valid \code{CSS}.
 #'
+#' @examples
+#' browse_aframe(
+#'   a_scene(
+#'     a_box(
+#'       color = "blue",
+#'       position = xyz_aframe(0, 1, -5)
+#'     )
+#'   )
+#' )
+#'
 #' @note Keep the \code{width} at \code{100\%} for a responsive visualisation.
 #'
 #' @rdname view
 #' @export
 browse_aframe <- function(a){
-  htmltools::browsable(a)
+  htmltools::html_print(a, viewer = browseURL)
 }
 
 #' @rdname view

@@ -23,3 +23,14 @@ Browse or embed an aframe.
 \note{
 Keep the \code{width} at \code{100\%} for a responsive visualisation.
 }
+\examples{
+browse_aframe(
+  a_scene(
+    a_box(
+      color = "blue",
+      position = xyz_aframe(0, 1, -5)
+    )
+  )
+)
+
+}
