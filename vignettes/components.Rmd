@@ -76,4 +76,26 @@ div(
     )
   )
 )
+
+div(
+  class = "row",
+  div(
+    class = "col-md-4",
+    div(
+      class = "thumbnail",
+      div(
+        class = "caption",
+        h3("aphysics"),
+        p("Physics components for aframer."),
+        p(
+          a(
+            class = "btn btn-default",
+            tags$i(class = "fa fa-desktop"), " Site",
+            href = "https://aphisics.john-coene.com/"
+          )
+        )
+      )
+    )
+  )
+)
 ```
