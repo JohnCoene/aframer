@@ -15,3 +15,22 @@
 .avail_versions <- function(){
   c("0.5.0", "0.6.0", "0.7.0", "0.8.0", "0.8.2")
 }
+
+.build_html <- function(a){
+  dep <- htmltools::findDependencies(a)
+  dep <- htmltools::renderDependencies(dep)
+  dep <- gsub("^/", "", dep)
+  
+  scene <- htmltools::renderTags(a)$html
+  
+  glue::glue(
+    "<html>\n",
+    "<head>\n",
+    "{dep}\n",
+    "</head>\n",
+    "<body>\n",
+    "{scene}\n",
+    "</body>\n",
+    "</html>\n"
+  )
+}

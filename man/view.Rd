@@ -2,11 +2,14 @@
 % Please edit documentation in R/helpers.R
 \name{browse_aframe}
 \alias{browse_aframe}
+\alias{serve_aframe}
 \alias{embed_aframe}
 \alias{embed_aframe2}
 \title{Browse & Embed}
 \usage{
 browse_aframe(a)
+
+serve_aframe(a)
 
 embed_aframe(a, width = "100\%", height = "400px")
 

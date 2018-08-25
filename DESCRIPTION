@@ -8,8 +8,13 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
-Imports: htmltools, magrittr, glue
-Suggests: knitr,
+Imports: 
+    glue,
+    httpuv,
+    htmltools, 
+    magrittr
+Suggests: 
+    knitr,
     rmarkdown
 VignetteBuilder: knitr
 URL: http://aframer.john-coene.com/

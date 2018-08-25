@@ -14,13 +14,50 @@
 #'     )
 #'   )
 #' )
+#' 
+#' @importFrom utils browseURL
 #'
 #' @note Keep the \code{width} at \code{100\%} for a responsive visualisation.
 #'
 #' @rdname view
 #' @export
 browse_aframe <- function(a){
+  
+  if(missing(a))
+    stop("missing a", call. = FALSE)
+  
   htmltools::html_print(a, viewer = browseURL)
+}
+
+#' @rdname view
+#' @export
+serve_aframe <- function(a){
+  
+  if(missing(a))
+    stop("missing a", call. = FALSE)
+  
+  html <- .build_html(a)
+  
+  app <- list(
+    call = function(req) {
+      wsUrl = paste(sep='',
+                    '"',
+                    "ws://",
+                    ifelse(is.null(req$HTTP_HOST), req$SERVER_NAME, req$HTTP_HOST),
+                    '"')
+      
+      list(
+        status = 200L,
+        headers = list(
+          'Content-Type' = 'text/html'
+        ),
+        body = html
+      )
+    }
+  )
+  
+  browseURL("http://localhost:9454/")
+  httpuv::runServer("0.0.0.0", 9454, app, 250)
 }
 
 #' @rdname view

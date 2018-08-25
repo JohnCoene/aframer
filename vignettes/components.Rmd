@@ -91,7 +91,7 @@ div(
           a(
             class = "btn btn-default",
             tags$i(class = "fa fa-desktop"), " Site",
-            href = "https://aphisics.john-coene.com/"
+            href = "https://aphysics.john-coene.com/"
           )
         )
       )
