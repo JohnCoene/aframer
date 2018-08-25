@@ -2,10 +2,13 @@
 % Please edit documentation in R/general.R
 \name{a_assets}
 \alias{a_assets}
+\alias{a_asset_item}
 \alias{a_mixin}
 \title{Assets}
 \usage{
 a_assets(...)
+
+a_asset_item(...)
 
 a_mixin(...)
 }

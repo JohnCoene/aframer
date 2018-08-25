@@ -3,17 +3,17 @@
 \name{a_scene}
 \alias{a_scene}
 \alias{a_dependency}
+\alias{a_dep}
 \title{Scene}
 \usage{
-a_scene(..., dep = list(version = "0.8.2", cdn = FALSE))
+a_scene(...)
 
 a_dependency(version = "0.8.2", cdn = FALSE)
+
+a_dep(version = "0.8.2", cdn = FALSE)
 }
 \arguments{
 \item{...}{Any \code{aframer} element or parameter.}
-
-\item{dep}{Dependency options, set to \code{NULL} to not import dependency, 
-otherwise pass a list containing \code{version} and \code{cdn}.}
 
 \item{version}{Version of aframe to source, see details.}
 
@@ -32,13 +32,8 @@ Available versions:
   \item{\code{0.8.2}}
 }
 }
-\note{
-It is recommended to import dependency manually, like in the example, rather 
-than use the \code{dep} argument.
-}
 \examples{
 scene <- a_scene(
-  dep = NULL,
   a_dependency(),
   a_box(
     position = xyz_aframe(0, 1, 0),

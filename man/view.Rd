@@ -4,7 +4,6 @@
 \alias{browse_aframe}
 \alias{serve_aframe}
 \alias{embed_aframe}
-\alias{embed_aframe2}
 \title{Browse & Embed}
 \usage{
 browse_aframe(a)
@@ -12,8 +11,6 @@ browse_aframe(a)
 serve_aframe(a)
 
 embed_aframe(a, width = "100\%", height = "400px")
-
-embed_aframe2(a, width = "100\%", height = "400px")
 }
 \arguments{
 \item{a}{An aframe.}
@@ -29,6 +26,7 @@ Keep the \code{width} at \code{100\%} for a responsive visualisation.
 \examples{
 browse_aframe(
   a_scene(
+    a_dependency(),
     a_box(
       color = "blue",
       position = xyz_aframe(0, 1, -5)

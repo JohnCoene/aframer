@@ -8,6 +8,7 @@
 #' @examples
 #' browse_aframe(
 #'   a_scene(
+#'     a_dependency(),
 #'     a_box(
 #'       color = "blue",
 #'       position = xyz_aframe(0, 1, -5)
@@ -63,18 +64,6 @@ serve_aframe <- function(a){
 #' @rdname view
 #' @export
 embed_aframe <- function(a, width = "100%", height = "400px"){
-
-  style <- glue::glue("width:{width};height:{height};")
-
-  a[[1]] <- htmltools::tagAppendAttributes(a[[1]], style = style, embedded = NA)
-  htmltools::div(
-    a
-  )
-}
-
-#' @rdname view
-#' @export
-embed_aframe2 <- function(a, width = "100%", height = "400px"){
 
   style <- glue::glue("width:{width};height:{height};")
 

@@ -110,6 +110,7 @@ identical(x, y)
 
 embed_aframe(
   a_scene(
+    a_dep(),
     a_box(
       position = "-1 0.5 -3",
       rotation = "0 45 0",
