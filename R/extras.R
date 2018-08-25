@@ -9,7 +9,7 @@
 #' browse_aframe(
 #'   a_scene(
 #'     a_line("0, 1, 0", "2 0 -5", color = "blue"),
-#'    a_line(" 0 2 0", " 3 0 -4", color = "red")
+#'     a_line(" 0 2 0", " 3 0 -4", color = "red")
 #'   )
 #' )
 #'

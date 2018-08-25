@@ -1,4 +1,7 @@
 .get_dependency <- function(script, version, cdn){
+  
+  if(!version %in% .avail_versions())
+    stop("wrong version number", call. = FALSE)
 
   if(isTRUE(cdn))
     path <- c(href = paste0("https://aframe.io/releases/", version, "/"))
