@@ -1,3 +1,5 @@
+[![Travis build status](https://travis-ci.org/JohnCoene/aframer.svg?branch=master)](https://travis-ci.org/JohnCoene/aframer)
+
 # aframer
 
 Make Web Virtual Reality in R.

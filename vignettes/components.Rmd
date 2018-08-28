@@ -69,7 +69,7 @@ div(
           a(
             class = "btn btn-default",
             tags$i(class = "fa fa-desktop"), " Site",
-            href = "https://aextras.john-coene.com/"
+            href = "https://aparticles.john-coene.com/"
           )
         )
       )
@@ -128,6 +128,28 @@ div(
             class = "btn btn-default",
             tags$i(class = "fa fa-desktop"), " Site",
             href = "https://ashake.john-coene.com/"
+          )
+        )
+      )
+    )
+  )
+)
+
+div(
+  class = "row",
+  div(
+    class = "col-md-4",
+    div(
+      class = "thumbnail",
+      div(
+        class = "caption",
+        h3("acurve"),
+        p("curve components for aframer."),
+        p(
+          a(
+            class = "btn btn-default",
+            tags$i(class = "fa fa-desktop"), " Site",
+            href = "https://acurve.john-coene.com/"
           )
         )
       )
