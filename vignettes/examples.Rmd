@@ -1,0 +1,87 @@
+---
+title: "Examples"
+author: "John Coene"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(aframer)
+library(aparticle)
+```
+
+## AR
+
+You can view an extensive use of `aframer` @ [am.john-coene.com](https://am.john-coene.com/) which displays the World Economic Forum's [Transformation Maps](https://toplink.weforum.org) in Augmented Reality.
+
+## VR
+
+```{r}
+embed_aframe(
+  a_scene(
+    fog = opts_aframe(type = "exponential"),
+    a_assets(
+      a_asset_item(
+        id = "sky",
+        src = "https://cdn.glitch.com/4bdc937e-543e-4b0b-ae40-27afe346404a%2Fnightsky.jpg?1491096117462"
+      ),
+      a_asset_item(
+        id = "earth",
+        src = "https://cdn.glitch.com/4bdc937e-543e-4b0b-ae40-27afe346404a%2FMapOfEarth.jpg?1491096483136"
+      ),
+      a_asset_item(
+        id = "clouds",
+        src = "https://cdn.glitch.com/4bdc937e-543e-4b0b-ae40-27afe346404a%2Fclouds.png?1491110023655"
+      ),
+      a_asset_item(
+        id = "moon",
+        src = "https://cdn.glitch.com/4bdc937e-543e-4b0b-ae40-27afe346404a%2Frsz_moon.jpg?1491100234279"
+      )
+    ),
+    a_entity(
+      position = xyz_aframe(0, 2.25, -15),
+      `particle-system` = opts_aframe(
+        preset = "dust",
+        type = 2,
+        color = "#ffffff,#000033",
+        size = .2
+      )
+    ),
+    a_entity(
+      position = xyz_aframe(0, -2.25, -15),
+      `particle-system` = opts_aframe(
+        preset = "dust",
+        type = 2,
+        color = "#ffffff,#330000",
+        size = .2
+      )
+    ),
+    a_entity(
+      a_animation(
+        attribute = "rotation",
+        easing = "linear",
+        dur = 100000,
+        fill = "forwards",
+        to = xyz_aframe(0, 360, 0)
+      ),
+      a_sphere(
+        position = x_yz_aframe(0, .25, 0),
+        radius = 2.25,
+        material = opts_aframe(
+          src = "#earth",
+          roughness = 1
+        )
+      )
+    )
+  )
+)
+```

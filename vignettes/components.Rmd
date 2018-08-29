@@ -69,7 +69,7 @@ div(
           a(
             class = "btn btn-default",
             tags$i(class = "fa fa-desktop"), " Site",
-            href = "https://aextras.john-coene.com/"
+            href = "https://aparticle.john-coene.com/"
           )
         )
       )
