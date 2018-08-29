@@ -162,12 +162,30 @@ div(
       div(
         class = "caption",
         h3("apath"),
-        p("Path components for aframer."),
+        p("Path component for aframer."),
         p(
           a(
             class = "btn btn-default",
             tags$i(class = "fa fa-desktop"), " Site",
             href = "https://apath.john-coene.com/"
+          )
+        )
+      )
+    )
+  ),
+  div(
+    class = "col-md-4",
+    div(
+      class = "thumbnail",
+      div(
+        class = "caption",
+        h3("acubemap"),
+        p("Cubemap component for aframer."),
+        p(
+          a(
+            class = "btn btn-default",
+            tags$i(class = "fa fa-desktop"), " Site",
+            href = "https://acubemap.john-coene.com/"
           )
         )
       )

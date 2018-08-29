@@ -110,6 +110,8 @@
 <div id="aframer" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#aframer" class="anchor"></a>aframer</h1></div>
+<div class="jumbotron">
+<div class="container">
 <div class="row">
 <div class="col-md-3">
 <img src="logo.png">
@@ -117,21 +119,33 @@
 <div class="col-md-9">
 <p>Make Web Virtual Reality in R.</p>
 <p>
-<a href="https://arframer.john-coene.com/" target="_blank" class="btn btn-lg btn-primary btn-blue">
+<a href="https://arframer.john-coene.com/" target="_blank" class="btn btn-primary btn-blue">
 <i class="fa fa-camera"></i>
-Augmented Reality
+AR
+</a>
+<a href="articles/packages.html" target="_blank" class="btn btn-default">
+<i class="fa fa-archive"></i>
+Packages
+<span class="badge">4</span>
+</a>
+<a href="articles/components.html" target="_blank" class="btn btn-default">
+<i class="fa fa-cubes"></i>
+Components
+<span class="badge">9</span>
 </a>
 </p>
+</div>
+</div>
 </div>
 </div>
 <div id="installation" class="section level4">
 <h4 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h4>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
-devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/aframer"</span>)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/aframer"</span>)</a></code></pre></div>
 <p>You can install <code>aframer</code>, all its <a href="articles/packages.html">packages</a> and <a href="articles/components.html">components</a> with <code>vrrr</code>, <strong>V</strong>irtual <strong>R</strong>itual in <strong>R</strong> (with another <strong>R</strong>).</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
-devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/vrrr"</span>)</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"JohnCoene/vrrr"</span>)</a></code></pre></div>
 </div>
 <div id="example" class="section level4">
 <h4 class="hasAnchor">
@@ -141,28 +155,28 @@ devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocument
 <li>Embed the visualisation in R markdown with <code>embed_aframe</code>.</li>
 <li>Serve visualisations with <code>serve_aframe</code>.</li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(aframer)
-
-<span class="kw"><a href="reference/view.html">embed_aframe</a></span>(
-  <span class="kw"><a href="reference/scene.html">a_scene</a></span>(
-    <span class="kw"><a href="reference/scene.html">a_dependency</a></span>(),
-    <span class="kw"><a href="reference/primitives.html">a_box</a></span>(
-      <span class="dt">position =</span> <span class="st">"-1 0.5 -3"</span>, <span class="dt">rotation =</span> <span class="st">"0 45 0"</span>, <span class="dt">color =</span> <span class="st">"#4CC3D9"</span>
-    ),
-    <span class="kw"><a href="reference/primitives.html">a_sphere</a></span>(
-      <span class="dt">position =</span> <span class="st">"0 1.25 -5"</span>, <span class="dt">radius =</span> <span class="st">"1.25"</span>, <span class="dt">color =</span> <span class="st">"#EF2D5E"</span>
-    ),
-    <span class="kw"><a href="reference/primitives.html">a_cylinder</a></span>(
-      <span class="dt">position =</span> <span class="st">"1 0.75 -3"</span>, <span class="dt">radius =</span> <span class="st">"0.5"</span>, <span class="dt">height =</span> <span class="st">"1.5"</span>, <span class="dt">color =</span> <span class="st">"#FFC65D"</span>
-    ),
-    <span class="kw"><a href="reference/primitives.html">a_plane</a></span>(
-      <span class="dt">position =</span> <span class="st">"0 0 -4"</span>, <span class="dt">rotation =</span> <span class="st">"-90 0 0"</span>, <span class="dt">width =</span> <span class="st">"4"</span>, <span class="dt">height =</span> <span class="st">"4"</span>, <span class="dt">color =</span> <span class="st">"#7BC8A4"</span>
-    ),
-    <span class="kw"><a href="reference/primitives.html">a_sky</a></span>(
-      <span class="dt">color=</span><span class="st">"#ECECEC"</span>
-    )
-  )
-)</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(aframer)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="reference/view.html">embed_aframe</a></span>(</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="kw"><a href="reference/scene.html">a_scene</a></span>(</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">    <span class="kw"><a href="reference/scene.html">a_dependency</a></span>(),</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">    <span class="kw"><a href="reference/primitives.html">a_box</a></span>(</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">      <span class="dt">position =</span> <span class="st">"-1 0.5 -3"</span>, <span class="dt">rotation =</span> <span class="st">"0 45 0"</span>, <span class="dt">color =</span> <span class="st">"#4CC3D9"</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">    ),</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">    <span class="kw"><a href="reference/primitives.html">a_sphere</a></span>(</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">      <span class="dt">position =</span> <span class="st">"0 1.25 -5"</span>, <span class="dt">radius =</span> <span class="st">"1.25"</span>, <span class="dt">color =</span> <span class="st">"#EF2D5E"</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">    ),</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">    <span class="kw"><a href="reference/primitives.html">a_cylinder</a></span>(</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">      <span class="dt">position =</span> <span class="st">"1 0.75 -3"</span>, <span class="dt">radius =</span> <span class="st">"0.5"</span>, <span class="dt">height =</span> <span class="st">"1.5"</span>, <span class="dt">color =</span> <span class="st">"#FFC65D"</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">    ),</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">    <span class="kw"><a href="reference/primitives.html">a_plane</a></span>(</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">      <span class="dt">position =</span> <span class="st">"0 0 -4"</span>, <span class="dt">rotation =</span> <span class="st">"-90 0 0"</span>, <span class="dt">width =</span> <span class="st">"4"</span>, <span class="dt">height =</span> <span class="st">"4"</span>, <span class="dt">color =</span> <span class="st">"#7BC8A4"</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17">    ),</a>
+<a class="sourceLine" id="cb3-18" data-line-number="18">    <span class="kw"><a href="reference/primitives.html">a_sky</a></span>(</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">      <span class="dt">color=</span><span class="st">"#ECECEC"</span></a>
+<a class="sourceLine" id="cb3-20" data-line-number="20">    )</a>
+<a class="sourceLine" id="cb3-21" data-line-number="21">  )</a>
+<a class="sourceLine" id="cb3-22" data-line-number="22">)</a></code></pre></div>
 <div>
 <a-scene style="width:100%;height:400px;" embedded><a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box><a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere><a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder><a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane><a-sky color="#ECECEC"></a-sky></a-scene>
 </div>

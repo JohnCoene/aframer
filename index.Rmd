@@ -8,25 +8,51 @@ library(htmltools)
 
 ```{r, echo=FALSE}
 div(
-  class = "row",
+  class = "jumbotron",
   div(
-    class = "col-md-3",
-    img(src = "logo.png")
-  ),
-  div(
-    class = "col-md-9",
-    p(
-      "Make Web Virtual Reality in R."
-    ),
-    p(
-      a(
-        href = "https://arframer.john-coene.com/",
-        target = "_blank",
-        class = "btn btn-lg btn-primary btn-blue",
-        tags$i(
-          class = "fa fa-camera"
+    class = "container",
+    div(
+      class = "row",
+      div(
+        class = "col-md-3",
+        img(src = "logo.png")
+      ),
+      div(
+        class = "col-md-9",
+        p(
+          "Make Web Virtual Reality in R."
         ),
-        "Augmented Reality"
+        p(
+          a(
+            href = "https://arframer.john-coene.com/",
+            target = "_blank",
+            class = "btn btn-primary btn-blue",
+            tags$i(
+              class = "fa fa-camera"
+            ),
+            "AR"
+          ),
+          a(
+            href = "articles/packages.html",
+            target = "_blank",
+            class = "btn btn-default",
+            tags$i(
+              class = "fa fa-archive"
+            ),
+            "Packages",
+            span(class = "badge", 4)
+          ),
+          a(
+            href = "articles/components.html",
+            target = "_blank",
+            class = "btn btn-default",
+            tags$i(
+              class = "fa fa-cubes"
+            ),
+            "Components",
+            span(class = "badge", 9)
+          )
+        )
       )
     )
   )
