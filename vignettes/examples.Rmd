@@ -14,9 +14,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-
-library(aframer)
-library(aparticle)
 ```
 
 ## AR
@@ -26,8 +23,15 @@ You can view an extensive use of `aframer` @ [am.john-coene.com](https://am.john
 ## VR
 
 ```{r}
+library(aframer)
+library(aextras)
+library(aparticle)
+
 embed_aframe(
   a_scene(
+    a_dependency(),
+    aextras_dependency(),
+    aparticle_dependency(),
     fog = opts_aframe(type = "exponential"),
     a_assets(
       a_asset_item(
@@ -74,7 +78,7 @@ embed_aframe(
         to = xyz_aframe(0, 360, 0)
       ),
       a_sphere(
-        position = x_yz_aframe(0, .25, 0),
+        position = xyz_aframe(0, .25, 0),
         radius = 2.25,
         material = opts_aframe(
           src = "#earth",

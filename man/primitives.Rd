@@ -50,6 +50,8 @@ a_cursor(...)
 
 a_curvedimage(...)
 
+a_entity(...)
+
 a_cylinder(...)
 
 a_gltf_model(...)
