@@ -10,6 +10,7 @@
 \alias{a_cone}
 \alias{a_cursor}
 \alias{a_curvedimage}
+\alias{a_event}
 \alias{a_cylinder}
 \alias{a_gltf_model}
 \alias{a_icosahedron}
@@ -50,7 +51,7 @@ a_cursor(...)
 
 a_curvedimage(...)
 
-a_entity(...)
+a_event(...)
 
 a_cylinder(...)
 

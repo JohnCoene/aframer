@@ -87,7 +87,7 @@ a_curvedimage <- function(...){
 
 #' @rdname primitives
 #' @export
-a_entity <- function(...){
+a_event <- function(...){
   a_primitive("event", list(...))
 }
 
