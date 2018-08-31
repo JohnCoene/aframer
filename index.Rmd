@@ -50,7 +50,7 @@ div(
               class = "fa fa-cubes"
             ),
             "Components",
-            span(class = "badge", 9)
+            span(class = "badge", 11)
           )
         )
       )
