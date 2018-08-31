@@ -24,6 +24,9 @@ navbar:
     - icon: fa-lg fa-book
       text: "Reference"
       href: "reference/"
+    - icon: fa-lg fa-graduation-cap
+      text: "Guide"
+      href: "https://vrrr.john-coene.com"
     - icon: fa-lg fa-camera
       text: "AR"
       href: https://arframer.john-coene.com/

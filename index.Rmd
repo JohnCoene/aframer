@@ -66,18 +66,51 @@ div(
 devtools::install_github("JohnCoene/aframer")
 ```
 
-You can install `aframer`, all its [packages](articles/packages.html) and [components](articles/components.html) with `vrrr`, **V**irtual **R**itual in **R** (with another **R**).
+You can install `aframer`, all its [packages](articles/packages.html) and [components](articles/components.html) with `vrrr`, **V**irtual **R**itual in **R** (with another **R**) which also hosts all the documentation for aframer and its components.
 
 ```{r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("JohnCoene/vrrr")
 ```
 
-#### Example
+#### Examples 
 
-1. You can browse by encapsulating `a_scene` in `browse_aframe`.
-2. Embed the visualisation in R markdown with `embed_aframe`.
-3. Serve visualisations with `serve_aframe`.
+```{r, echo=FALSE}
+div(
+  class = "panel panel-info",
+  div(
+    class = "panel-body",
+    div(
+      class = "row",
+      div(
+        class = "col-md-10",
+        tags$i(class = "fa fa-warning text-warning"),
+        " Documentation for all packages and components can be found on the",
+        tags$a(
+          "vrrr",
+          target = "_blank",
+          href = "https://vrrr.john-coene.com"
+        ),
+        "website."
+      ),
+      div(
+        class = "col-md-2",
+        tags$a(
+          class = "btn btn-primary",
+          tags$i(
+            class = "fa fa-graduation-cap"
+          ),
+          " Guide"
+        )
+      )
+    )
+  )
+)
+```
+
+- You can browse by encapsulating `a_scene` in `browse_aframe`.
+- Embed the visualisation in R markdown with `embed_aframe`.
+- Serve visualisations with `serve_aframe`.
 
 ```{r}
 library(aframer)
